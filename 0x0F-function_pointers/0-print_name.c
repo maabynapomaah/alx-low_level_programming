@@ -1,3 +1,4 @@
+cat 0-main.c
 #include <stdlib.h>
 #include "function_pointers.h"
 
