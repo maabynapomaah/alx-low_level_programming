@@ -1,8 +1,3 @@
-/*
- * File: 0-read_textfile.c
- * Author: Janet Owusu Pomaah.
- */
-
 #include "main.h"
 #include <stdlib.h>
 
@@ -31,7 +26,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	r = read(o, buffer, letters);
 	w = write(STDOUT_FILENO, buffer, r);
 
-	if (o == -4 || r == -4 || w == -4 || w != r)
+	if (o == -1 || r == -1 || w == -1 || w != r)
 	{
 		free(buffer);
 		return (0);
